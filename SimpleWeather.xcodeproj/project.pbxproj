@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		21B50DFC1A34EF65005DE775 /* SimpleWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50DFB1A34EF65005DE775 /* SimpleWeatherTests.swift */; };
 		21B50E111A34F050005DE775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E061A34F050005DE775 /* AppDelegate.swift */; };
-		21B50E121A34F050005DE775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E081A34F050005DE775 /* ViewController.swift */; };
+		21B50E121A34F050005DE775 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E081A34F050005DE775 /* MainViewController.swift */; };
 		21B50E131A34F050005DE775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B50E0A1A34F050005DE775 /* Images.xcassets */; };
 		21B50E161A34F050005DE775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B50E0F1A34F050005DE775 /* Main.storyboard */; };
 		698B56B77F9BCCBC6279E98A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C3A0FA55BB02A4F607312C /* libPods.a */; };
@@ -31,10 +31,11 @@
 		21B50DFA1A34EF65005DE775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Tests/Info.plist; sourceTree = "<group>"; };
 		21B50DFB1A34EF65005DE775 /* SimpleWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleWeatherTests.swift; path = ../Tests/SimpleWeatherTests.swift; sourceTree = "<group>"; };
 		21B50E061A34F050005DE775 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21B50E081A34F050005DE775 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21B50E081A34F050005DE775 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		21B50E0A1A34F050005DE775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21B50E0B1A34F050005DE775 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B50E101A34F050005DE775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21B9F3021A34F54600ADAD4B /* SimpleWeather-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SimpleWeather-Bridging-Header.h"; path = "Headers/SimpleWeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		676E3C17072CD8A9BE3F3624 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BA2EB086FA432203CCD87E60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C3A0FA55BB02A4F607312C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +87,7 @@
 				21B50E071A34F050005DE775 /* Controllers */,
 				21B50E0C1A34F050005DE775 /* Views */,
 				21B50E091A34F050005DE775 /* Resources */,
+				21B9F3031A34F54900ADAD4B /* Headers */,
 			);
 			path = SimpleWeather;
 			sourceTree = "<group>";
@@ -119,7 +121,7 @@
 		21B50E071A34F050005DE775 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				21B50E081A34F050005DE775 /* ViewController.swift */,
+				21B50E081A34F050005DE775 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +149,14 @@
 				21B50E0B1A34F050005DE775 /* Info.plist */,
 			);
 			name = "Property Lists";
+			sourceTree = "<group>";
+		};
+		21B9F3031A34F54900ADAD4B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				21B9F3021A34F54600ADAD4B /* SimpleWeather-Bridging-Header.h */,
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 		3BD2CE90BF732825FB04CB2D /* Frameworks */ = {
@@ -302,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B50E111A34F050005DE775 /* AppDelegate.swift in Sources */,
-				21B50E121A34F050005DE775 /* ViewController.swift in Sources */,
+				21B50E121A34F050005DE775 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +432,7 @@
 				INFOPLIST_FILE = SimpleWeather/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleWeather/Headers/SimpleWeather-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -434,6 +445,7 @@
 				INFOPLIST_FILE = SimpleWeather/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleWeather/Headers/SimpleWeather-Bridging-Header.h";
 			};
 			name = Release;
 		};
