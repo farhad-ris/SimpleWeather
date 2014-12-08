@@ -11,5 +11,6 @@
 
 #import <TSMessages/TSMessage.h>
 #import <LBBlurredImage/UIImageView+LBBlurredImage.h>
+#import <Mantle/Mantle.h>
 
 #endif

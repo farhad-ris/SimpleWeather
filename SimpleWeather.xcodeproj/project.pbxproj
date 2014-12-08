@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2164052C1A352F060084B685 /* SWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164052B1A352F060084B685 /* SWClient.swift */; };
+		216405301A352F2F0084B685 /* SWManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164052F1A352F2F0084B685 /* SWManager.swift */; };
+		216405321A352F420084B685 /* SWCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216405311A352F420084B685 /* SWCondition.swift */; };
+		216405341A352F5C0084B685 /* SWDailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216405331A352F5C0084B685 /* SWDailyForecast.swift */; };
 		21B50DFC1A34EF65005DE775 /* SimpleWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50DFB1A34EF65005DE775 /* SimpleWeatherTests.swift */; };
 		21B50E111A34F050005DE775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E061A34F050005DE775 /* AppDelegate.swift */; };
 		21B50E121A34F050005DE775 /* SWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E081A34F050005DE775 /* SWViewController.swift */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2164052B1A352F060084B685 /* SWClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWClient.swift; path = Client/SWClient.swift; sourceTree = "<group>"; };
+		2164052F1A352F2F0084B685 /* SWManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWManager.swift; path = Client/SWManager.swift; sourceTree = "<group>"; };
+		216405311A352F420084B685 /* SWCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCondition.swift; sourceTree = "<group>"; };
+		216405331A352F5C0084B685 /* SWDailyForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWDailyForecast.swift; path = Models/SWDailyForecast.swift; sourceTree = "<group>"; };
 		21B50DE01A34EF65005DE775 /* SimpleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B50DF51A34EF65005DE775 /* SimpleWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B50DFA1A34EF65005DE775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Tests/Info.plist; sourceTree = "<group>"; };
@@ -60,6 +68,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2164052D1A352F0A0084B685 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2164052B1A352F060084B685 /* SWClient.swift */,
+				2164052F1A352F2F0084B685 /* SWManager.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		2164052E1A352F100084B685 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				216405311A352F420084B685 /* SWCondition.swift */,
+				216405331A352F5C0084B685 /* SWDailyForecast.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		21B50DD71A34EF65005DE775 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				21B50E051A34F050005DE775 /* Application */,
+				2164052D1A352F0A0084B685 /* Client */,
+				2164052E1A352F100084B685 /* Models */,
 				21B50E071A34F050005DE775 /* Controllers */,
 				21B50E0C1A34F050005DE775 /* Views */,
 				21B50E091A34F050005DE775 /* Resources */,
@@ -311,8 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216405341A352F5C0084B685 /* SWDailyForecast.swift in Sources */,
+				2164052C1A352F060084B685 /* SWClient.swift in Sources */,
 				21B50E111A34F050005DE775 /* AppDelegate.swift in Sources */,
+				216405321A352F420084B685 /* SWCondition.swift in Sources */,
 				21B50E121A34F050005DE775 /* SWViewController.swift in Sources */,
+				216405301A352F2F0084B685 /* SWManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
