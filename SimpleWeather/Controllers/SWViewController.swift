@@ -17,6 +17,8 @@ class SWViewController: UIViewController, UITableViewDataSource, UITableViewDele
     private var blurredImageView: UIImageView?
     private var tableView: UITableView?
     
+    private var sharedManager: SWManager = SWManager()
+    
     // MARK: View Life Cycle
 
     override func viewDidLoad() {
@@ -125,6 +127,19 @@ class SWViewController: UIViewController, UITableViewDataSource, UITableViewDele
         header.addSubview(conditionsLabel)
         header.addSubview(temperatureLabel)
         header.addSubview(hiloLabel)
+        
+        self.sharedManager.findCurrentLocation()
+        
+        SWManager.RACObserve(self.sharedManager, keyPath: "currentCondition")
+            .deliverOn(RACScheduler.mainThreadScheduler())
+            .subscribeNext({(newCondition: AnyObject!) in
+                if newCondition != nil {
+                    temperatureLabel.text = "\((newCondition as SWCondition).temperature)"
+                    conditionsLabel.text = (newCondition as SWCondition).condition?.capitalizedString
+                    cityLabel.text = (newCondition as SWCondition).locationName?.capitalizedString
+                    iconView.image = UIImage(named: (newCondition as SWCondition).imageName())
+                }
+            })
     }
     
     // MARK: UITableViewDataSource
