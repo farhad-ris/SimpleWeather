@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  SWViewController.swift
 //  SimpleWeather
 //
 //  Created by Kevin Xu on 12/7/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
+class SWViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
     
     // MARK: Properties
     

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		21B50DFC1A34EF65005DE775 /* SimpleWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50DFB1A34EF65005DE775 /* SimpleWeatherTests.swift */; };
 		21B50E111A34F050005DE775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E061A34F050005DE775 /* AppDelegate.swift */; };
-		21B50E121A34F050005DE775 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E081A34F050005DE775 /* MainViewController.swift */; };
+		21B50E121A34F050005DE775 /* SWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50E081A34F050005DE775 /* SWViewController.swift */; };
 		21B50E131A34F050005DE775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B50E0A1A34F050005DE775 /* Images.xcassets */; };
 		21B50E161A34F050005DE775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B50E0F1A34F050005DE775 /* Main.storyboard */; };
 		698B56B77F9BCCBC6279E98A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C3A0FA55BB02A4F607312C /* libPods.a */; };
@@ -31,7 +31,7 @@
 		21B50DFA1A34EF65005DE775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Tests/Info.plist; sourceTree = "<group>"; };
 		21B50DFB1A34EF65005DE775 /* SimpleWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleWeatherTests.swift; path = ../Tests/SimpleWeatherTests.swift; sourceTree = "<group>"; };
 		21B50E061A34F050005DE775 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21B50E081A34F050005DE775 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		21B50E081A34F050005DE775 /* SWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWViewController.swift; sourceTree = "<group>"; };
 		21B50E0A1A34F050005DE775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21B50E0B1A34F050005DE775 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B50E101A34F050005DE775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		21B50E071A34F050005DE775 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				21B50E081A34F050005DE775 /* MainViewController.swift */,
+				21B50E081A34F050005DE775 /* SWViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B50E111A34F050005DE775 /* AppDelegate.swift in Sources */,
-				21B50E121A34F050005DE775 /* MainViewController.swift in Sources */,
+				21B50E121A34F050005DE775 /* SWViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
