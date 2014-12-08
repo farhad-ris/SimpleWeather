@@ -12,5 +12,6 @@
 #import <TSMessages/TSMessage.h>
 #import <LBBlurredImage/UIImageView+LBBlurredImage.h>
 #import <Mantle/Mantle.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 #endif
